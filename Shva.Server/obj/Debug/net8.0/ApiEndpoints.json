@@ -1,0 +1,48 @@
+[
+  {
+    "ContainingType": "Shva.Server.Controllers.TransactionsController",
+    "Method": "GetApproved",
+    "RelativePath": "api/Transactions/approved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Shva.Server.DTOs.ApprovedTransactionDto, Shva.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Shva.Server.Controllers.TransactionsController",
+    "Method": "Simulate",
+    "RelativePath": "api/Transactions/simulate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Shva.Server.DTOs.SimulateTransactionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Shva.Server.DTOs.SimulateTransactionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

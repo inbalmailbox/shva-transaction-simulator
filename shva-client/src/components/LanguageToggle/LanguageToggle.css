@@ -1,0 +1,21 @@
+.language-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.language-toggle__button {
+  min-width: 68px;
+  height: 34px;
+  border: 1px solid #b9b9b9;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.language-toggle__button.is-active {
+  background: #2f2f2f;
+  color: #ffffff;
+  border-color: #2f2f2f;
+}

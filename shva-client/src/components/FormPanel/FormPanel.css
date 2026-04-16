@@ -1,0 +1,34 @@
+.form-panel__button {
+  height: 46px;
+  border: none;
+  border-radius: 10px;
+  background: #6f4cb4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form-panel__button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-panel__result {
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.form-panel__result.is-approved {
+  background: #edf8f0;
+  color: #1f6b35;
+  border: 1px solid #b9e1c3;
+}
+
+.form-panel__result.is-rejected {
+  background: #fdeeee;
+  color: #a12a2a;
+  border: 1px solid #efc0c0;
+}

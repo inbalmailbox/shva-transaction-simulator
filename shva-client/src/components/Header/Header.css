@@ -1,0 +1,37 @@
+.header {
+  border-bottom: 1px solid #e9e9e9;
+  background-color: #fff;
+}
+
+.header__inner {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #65d3f3 0%, #6b49b5 100%);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.header__logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4f3296;
+  line-height: 1;
+}

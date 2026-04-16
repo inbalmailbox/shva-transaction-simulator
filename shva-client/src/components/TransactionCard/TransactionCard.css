@@ -1,0 +1,20 @@
+.transaction-card {
+  min-height: 116px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.transaction-card__time {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #262626;
+}
+
+.transaction-card__region {
+  margin: 0;
+  font-size: 1rem;
+  color: #4d4d4d;
+}

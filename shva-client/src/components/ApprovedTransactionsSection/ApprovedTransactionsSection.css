@@ -1,0 +1,48 @@
+.approved-transactions {
+  padding-top: 36px;
+}
+
+.approved-transactions__title {
+  margin: 0 0 26px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #232323;
+}
+
+.approved-transactions__content {
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  gap: 16px;
+  align-items: center;
+}
+
+.approved-transactions__nav {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  background: #f3f3f3;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.approved-transactions__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+@media (max-width: 900px) {
+  .approved-transactions__content {
+    grid-template-columns: 1fr;
+  }
+
+  .approved-transactions__nav {
+    display: none;
+  }
+
+  .approved-transactions__list {
+    grid-template-columns: 1fr;
+  }
+}
