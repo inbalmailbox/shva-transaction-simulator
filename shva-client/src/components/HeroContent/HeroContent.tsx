@@ -1,3 +1,4 @@
+import heroImage from '../../assets/mockups.png';
 import './HeroContent.css';
 
 function HeroContent() {
@@ -10,9 +11,11 @@ function HeroContent() {
       </h1>
 
       <div className="hero-content__visual">
-        <div className="hero-content__visual-text">
-          SHVA visual
-        </div>
+        <img
+          className="hero-content__image"
+          src={heroImage}
+          alt="Shva transaction simulator illustration"
+        />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import LanguageToggle from '../LanguageToggle/LanguageToggle';
+import logo from '../../assets/shva_logo.png';
 import './Header.css';
 
 function Header() {
@@ -6,8 +7,7 @@ function Header() {
     <header className="header">
       <div className="header__inner">
         <div className="header__logo-wrap">
-          <div className="header__logo-icon">S</div>
-          <div className="header__logo-text">shva</div>
+          <img className="header__logo-image" src={logo} alt="Shva logo" />
         </div>
 
         <LanguageToggle />

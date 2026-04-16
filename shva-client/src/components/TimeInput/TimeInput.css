@@ -10,21 +10,129 @@
 }
 
 .time-input__card {
-  background: #e7daf7;
-  border-radius: 26px;
-  padding: 22px 20px;
-  min-height: 180px;
+  background: #e6d8f5;
+  border-radius: 28px;
+  padding: 20px 22px 18px;
+  margin-top: 10px;
+  min-height: 230px;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.time-input__control {
-  width: 180px;
-  height: 58px;
-  border: 2px solid #7d60a8;
+.time-input__top-label {
+  font-size: 0.88rem;
+  color: #5d5670;
+}
+
+.time-input__display {
+  display: grid;
+  grid-template-columns: 96px auto 96px;
+  justify-content: start;
+  align-items: center;
+  column-gap: 18px;
+  margin-top: 10px;
+}
+
+.time-input__box {
+  width: 96px;
+  height: 72px;
   border-radius: 10px;
-  background: #fff;
-  padding: 0 12px;
-  font-size: 1.5rem;
-  color: #2f2450;
+  border: 2px solid #7d60a8;
+  background: #ffffff;
+  color: #2d1d58;
+  font-size: 2.2rem;
+  line-height: 1;
+  text-align: center;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.time-input__box.is-minute {
+  border-color: transparent;
+  color: #222;
+  background: #f3eef8;
+}
+
+.time-input__separator {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2b2240;
+  line-height: 1;
+  transform: translateY(-2px);
+}
+
+.time-input__captions {
+  display: grid;
+  grid-template-columns: 96px 96px;
+  justify-content: start;
+  column-gap: 50px;
+  margin-top: 10px;
+  color: #554d65;
+  font-size: 0.92rem;
+}
+
+.time-input__captions span {
+  text-align: left;
+}
+
+.time-input__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.time-input__clock {
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #4f4660;
+}
+
+.time-input__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.time-input__text-button {
+  border: none;
+  background: transparent;
+  color: #6a5d84;
+  font-size: 0.98rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.time-input__text-button.is-primary {
+  font-weight: 700;
+  color: #7a62a5;
+}
+
+@media (max-width: 900px) {
+  .time-input__card {
+    min-height: 210px;
+    padding-top: 5px;
+  }
+
+  .time-input__display {
+    grid-template-columns: 84px auto 84px;
+    column-gap: 14px;
+  }
+
+  .time-input__box {
+    width: 84px;
+    height: 64px;
+    font-size: 2rem;
+  }
+
+  .time-input__captions {
+    grid-template-columns: 84px 84px;
+    column-gap: 40px;
+  }
+
+  .time-input__separator {
+    font-size: 2rem;
+  }
 }

@@ -15,23 +15,21 @@
 .header__logo-wrap {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
-.header__logo-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #65d3f3 0%, #6b49b5 100%);
-  color: white;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
+.header__logo-image {
+  height: 42px;
+  width: auto;
+  display: block;
 }
 
-.header__logo-text {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #4f3296;
-  line-height: 1;
+@media (max-width: 900px) {
+  .header__inner {
+    width: min(100%, calc(100% - 24px));
+    min-height: 72px;
+  }
+
+  .header__logo-image {
+    height: 34px;
+  }
 }

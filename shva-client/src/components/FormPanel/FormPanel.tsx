@@ -24,8 +24,10 @@ function FormPanel({
 
   return (
     <div className="form-panel">
-      <RegionSelect value={region} onChange={setRegion} />
-      <TimeInput value={time} onChange={setTime} />
+      <div className="form-panel__controls">
+        <RegionSelect value={region} onChange={setRegion} />
+        <TimeInput value={time} onChange={setTime} />
+      </div>
 
       <button
         type="button"
@@ -33,24 +35,47 @@ function FormPanel({
         onClick={handleSubmit}
         disabled={isSubmitting}
       >
-        {isSubmitting ? 'Checking...' : 'Simulate'}
+        {isSubmitting ? 'Checking...' : 'Simulate Transaction'}
       </button>
 
       {simulationResult && (
         <div
           className={`form-panel__result ${
-            simulationResult.status === 'Approved' ? 'is-approved' : 'is-rejected'
+            simulationResult.status === 'Approved'
+              ? 'is-approved'
+              : 'is-rejected'
           }`}
         >
-          <strong>Status:</strong> {simulationResult.status}
-          <br />
-          <strong>Local Time:</strong>{' '}
-          {new Date(simulationResult.localTime).toLocaleTimeString([], {
-            hour: '2-digit',
-            minute: '2-digit',
-          })}
-          <br />
-          <strong>Region:</strong> {simulationResult.region}
+          <div className="form-panel__result-row">
+            <span className="form-panel__result-label">Status</span>
+            <span className="form-panel__result-value">
+              {simulationResult.status}
+            </span>
+          </div>
+
+          <div className="form-panel__result-row">
+            <span className="form-panel__result-label">Region</span>
+            <span className="form-panel__result-value">
+              {simulationResult.region}
+            </span>
+          </div>
+
+          <div className="form-panel__result-row">
+            <span className="form-panel__result-label">Local Time</span>
+            <span className="form-panel__result-value">
+              {new Date(simulationResult.localTime).toLocaleTimeString([], {
+                hour: '2-digit',
+                minute: '2-digit',
+              })}
+            </span>
+          </div>
+
+          <div className="form-panel__result-row">
+            <span className="form-panel__result-label">Time Zone</span>
+            <span className="form-panel__result-value">
+              {simulationResult.timeZoneId}
+            </span>
+          </div>
         </div>
       )}
     </div>

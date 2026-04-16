@@ -1,9 +1,16 @@
 .transaction-card {
-  min-height: 116px;
+  min-height: 122px;
   border: 1px solid #e5e5e5;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 20px;
   background-color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.transaction-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
 }
 
 .transaction-card__time {

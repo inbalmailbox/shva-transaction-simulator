@@ -31,20 +31,27 @@
 
 .hero-content__visual {
   width: 100%;
-  max-width: 640px;
-  min-height: 300px;
-  border-radius: 20px;
-  background:
-    radial-gradient(circle at 75% 20%, #e8dcfb 0, #e8dcfb 18px, transparent 19px),
-    linear-gradient(180deg, #ffffff 0%, #fbf8ff 100%);
-  border: 1px solid #f0e8fb;
+  max-width: 680px;
+  min-height: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-.hero-content__visual-text {
-  color: #7251a7;
-  font-size: 1.05rem;
-  font-weight: 600;
+.hero-content__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    gap: 14px;
+  }
+
+  .hero-content__visual {
+    min-height: auto;
+  }
 }
