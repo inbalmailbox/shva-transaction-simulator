@@ -1,8 +1,0 @@
-C:\Users\inbal\projects\Shva.Server\obj\Debug\net9.0\Shva.Server.csproj.AssemblyReference.cache
-C:\Users\inbal\projects\Shva.Server\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Users\inbal\projects\Shva.Server\obj\Debug\net9.0\Shva.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\inbal\projects\Shva.Server\obj\Debug\net9.0\Shva.Server.AssemblyInfoInputs.cache
-C:\Users\inbal\projects\Shva.Server\obj\Debug\net9.0\Shva.Server.AssemblyInfo.cs
-C:\Users\inbal\projects\Shva.Server\obj\Debug\net9.0\Shva.Server.csproj.CoreCompileInputs.cache
-C:\Users\inbal\projects\Shva.Server\obj\Debug\net9.0\Shva.Server.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\inbal\projects\Shva.Server\obj\Debug\net9.0\Shva.Server.MvcApplicationPartsAssemblyInfo.cache
